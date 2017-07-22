@@ -286,9 +286,9 @@ t&=& \frac{-B}{2A}. \label{eq:peak}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Edit could actualy start here...
 
-Physically speaking, equilibrium, $h_{eq}$, is poorly defined in the region $\frac{M}{2m_c}>0.8$ and it is correspondingly difficult to get the system to oscillate in a stable, repeatable way in this region.  This is seen in  figures \ref{fig:oscillation} and \ref{fig:oscillation_residuals}.  In both figures the oscillation period predicted by equation \ref{eq:period} is higher than the period we measured. Restated, in experiment, oscillations take less time (and are faster) than what our theory predicts.  This deviation is seen primarily at $\frac{M}{2m_c}>0.8$ values, and is about $5\%$ in size.  
+Physically speaking, equilibrium, $h_{eq}$, is poorly defined in the region $\frac{M}{2m_c}>0.8$ and it is correspondingly difficult to get the system to oscillate in a stable, repeatable way in this region.  This is seen in  figures \ref{fig:oscillation} and \ref{fig:oscillation_residuals}.  In both figures the oscillation period predicted by equation \ref{eq:period} is higher than the period we measured. Restated, in experiment, oscillations take less time (and are faster) than what our theory predicts.  This deviation is seen primarily at $\frac{M}{2m_c}>0.8$ values, and is about $5-10\%$ in size.  
 
-We do not fully understand the disagreement between data and theory for $\frac{M}{2m_c}>0.8$. We are tempted to state that  higher damping (neglected in our theory) at $\frac{M}{2m_c}>0.8$ could be a cause for the disagreement  in this region, but we have not yet tested this idea.  
+We do not fully understand the disagreement between data and theory for $\frac{M}{2m_c}>0.8$. We are tempted to state that  higher frictional damping (neglected in our theory) at $\frac{M}{2m_c}>0.8$ could be a cause for the disagreement  in this region, but we have not yet tested this idea.  
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -304,7 +304,7 @@ We do not fully understand the disagreement between data and theory for $\frac{M
 Specifically, following reference \cite{Mechanics_reference}, an oscillating system subject to a damping force of $-b\dot{x}$ can be described with the equation of motion,
 $\ddot{x} + 2 \beta \dot{x} + \omega_0^2 x = 0$,
 with damping parameter, $\beta=b/2m$, 
-and characteristic (natural) angular frequency, $\omega_0=\sqrt{k/m}$.
+and characteristic angular frequency, $\omega_0=\sqrt{k/m}$.
 A standard exercise in junior mechanics is to show that this system will oscillate with motion $x$, and angular frequency $\omega_1$,
 \be
 x = A~\exp\left[-\beta t\right] ~\sin\left[ \omega_1 t+\delta \right]
@@ -314,7 +314,7 @@ x = A~\exp\left[-\beta t\right] ~\sin\left[ \omega_1 t+\delta \right]
 \omega_1 = \omega_0 \sqrt{1 - \left( \frac{\beta}{\omega_0} \right)^2 }.
 \label{eg:damped_osc}
 \ee
-This damped oscillatory behavior is clearly seen in figure \ref{fig:loggerpro_screenshot}.  A careful reader may note that figure \ref{fig:oscillation} contains measurements of shifted frequency, $\omega_1$ (and related period), while the prediction line is natural frequency, $\omega_0$, equation \ref{eq:omega}.  When the damping parameter, $\beta$, is  small, this discrepancy probably doesn't matter because as equation \ref{eg:damped_osc} shows, $\omega_1 \cong \omega_0$ in the limit $\beta\ll \omega_0$.
+This damped oscillatory behavior is clearly seen in figure \ref{fig:loggerpro_screenshot}.  A careful reader may note that figure \ref{fig:oscillation} contains measurements of shifted frequency, $\omega_1$ (and related period), while the prediction line is characteristic frequency, $\omega_0$, equation \ref{eq:omega}.  When the damping parameter, $\beta$, is  small, this discrepancy probably doesn't matter because as equation \ref{eg:damped_osc} shows, $\omega_1 \cong \omega_0$ in the limit $\beta\ll \omega_0$.
 
 So, the theory works up until $\frac{M}{2m_c}>0.8$, which, based on the argument above, might be the place where the condition $\beta \ll \omega_0$ no longer holds true.   We have not had the opportunity to systematically measure $\beta$ for many different bridge configurations to test this idea, but we think it bears further study.  
 
@@ -324,7 +324,7 @@ It may also be the motion in this $\frac{M}{2m_c}>0.8$ region is far enough from
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Extensions, Generalization, and Conclusions}
-To illustrate the general nature of this approach to small oscillations, consider the simple pendulum with bob mass $m$, pendulum length $l$, and position $\theta$, where $\theta=0$ describes the lowest-energy position.  The pendulum's system energy can be written,
+To illustrate the general nature of this approach to small oscillations, consider the simple pendulum with bob mass $m$, pendulum length $l$, and position $\theta$, where $\theta=0$ describes the lowest-energy (down) position.  The pendulum's system energy can be written,
 \be
 E_{sys}=\frac{1}{2}\left(m l^2 \right) \dot{\theta}^2-mgl\cos \theta.
 \ee 
@@ -338,9 +338,9 @@ Together, these results give the familiar form for small oscillations of a pendu
 \be
 \omega=\sqrt{\frac{k_{eff}}{m_{eff}}} = \sqrt{\frac{mgl}{m l^2}}=\sqrt{g/l}
 \ee
-We can imagine a similar analysis could be applied to a marble rolling back and forth in a bowl, or a cork bobbing up and down in the water. 
+We can imagine a similar analysis of a marble rolling back and forth in a bowl, or a cork bobbing up and down in the water. 
 
-To summarize the approach for determining the period of small oscillations around equilibrium:
+To summarize, the approach for determining the period of small oscillations around equilibrium:
 \begin{enumerate}
 \item The system should be one-dimensional, or be constrained to one degree of freedom, and should exhibit some oscillation around a (quasi-stable) equilibrium point.
 \item The system's energy should be expressible and losses over time should be left out of the expression for 
@@ -356,7 +356,7 @@ We do not provide a proof for this method in the present work, and we would be e
 
 At least informally in our department, there is a fair amount of discussion about what amount of calculus is sufficient for a class to meet the standard of ``University" and not ``College" Physics (these terms have signifigantly different meaning in the United States).  This approach to describing small oscillations makes use of only differentiation, and thus is accessible at the level of a student taking Differential Calculus and University Physics 1 simultaneously. 
 
-We thank Benjamin Bayman and Jeremy Armstrong for useful discussions, and also the students in the Spring 2013 section of Physics 221 at Winona State University, who worked on this lab with us.
+We thank Benjamin Bayman and Jeremy Armstrong for useful discussions, the journal's reviewers, and also the students in the Spring 2013 section of Physics 221 at Winona State University, who worked on this lab with us.
 
 
 
