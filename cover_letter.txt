@@ -1,0 +1,11 @@
+Dear Editors,
+
+This paper reports a method for extracting the frequency of small oscilliations from a system whose energy can be expressed analytically.  The only mention of the technique I've seen in the literature is a brief mention in Bayman and Hammermesh's "Review of Undergraduate Physics".  Our work includes a worked example for a system of masses and pulleys, in which the frequency of small oscillations is extracted analytically.  Experimental data is also presented that demonstrates the accuracy of this approach.
+
+At least informally in our department, there is a fair amount of discussion about what amount of calculus is sufficient for a class to meet the standard of "University" and not "College" Physics (these terms have signifigantly different meaning in the United States).  This approach to describing small oscillations makes use of only differentiation, and thus is accessible at the level of a student taking Differential Calculus (1) and University Physics 1 simultaneously.  
+
+We'd be grateful for your thoughts on the paper.
+
+Kind Regards,
+
+Nathan Moore
