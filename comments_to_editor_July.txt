@@ -1,0 +1,12 @@
+Dear Dr. White and Reviewers,
+
+Thank you very much for reading and commenting on our paper.  We have substantially revised section 4 and replaced figure 7.  We made these changes after reflecting on your comments and appreciate the chance to (we think) improve the work.
+
+Figure 7 now explicitly shows the position-time oscillation of the bridge.  To substantiate and make explicit our claim that the motion is that of an exponentially damped sinusoid, we added exponential bounds to the figure.
+
+The primary revision to Section 4 (Experiment) is a reorganization of the discussion of the disagreement between the theoretical prediction and experimental data in the region M/2mc > 0.8.  Specifically, while we may wonder if exponential damping (\beta) is responsible for the difference between theory and data, we don't presently have the time to substantially investigate this claim and leave it as a possibility for further investigation.  
+
+Again, we are quite grateful for your consideration and comments.  All the best,
+
+Nathan Moore and coauthors
+

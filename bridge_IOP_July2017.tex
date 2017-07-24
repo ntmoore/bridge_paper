@@ -77,7 +77,7 @@ The theory of small oscillations is an oft-overlooked corner of the introductory
 \ee
 where $\omega$, the frequency of the oscillation, is a function of some basic system parameters: $\omega=\sqrt{k/m}$ for the mass-spring system, and $\omega=\sqrt{g/l}$ for a pendulum with small enough oscillation amplitude.  
 
-It seems rare  to find an example more complicated that this in the homework sections of introductory books, and this may be due to the difficulty of expressing equations of motion which are both adequate descriptions of the motion of other systems, while still being analytically tractable for first-year students.
+It seems rare  to find an example more complicated than this in the homework sections of introductory books, and this may be due to the difficulty of expressing equations of motion which are both adequate descriptions of the motion of other systems, while still being analytically tractable for first-year students.
 
 Small oscillations are a fundamental feature of nature though, and it seems like a rewarding thing to include this class of motion in the intro course.  In the present work we describe and apply a method for predicting frequency for most any system oscillating in $1D$.  The general approach is to look for mathematical analogies in the functional ``shape" of the system's potential and kinetic energies and then express $\omega$ as a function of specific characteristics of the the system's energies.  We do not believe this is a novel approach to the problem, \cite{bayman_hammermesh}, but the technique is not well-known and we see no experimental verification of this approach in the literature. So, we describe and experimentally verify this technique for a relatively  complicated system of masses and pulleys that could serve as a support for a suspension bridge.  
 
@@ -134,7 +134,7 @@ Typical student data is compared to this prediction in figure \ref{fig:static_eq
 \includegraphics[width=\columnwidth]{static_residuals.pdf}  
 %\includegraphics[width=\columnwidth]{static_residuals.eps}
 \caption{
-Residuals showing detail of the $\approx 5\%$ disagreement between data and theory in equation \ref{eq:equilib} and figure \ref{fig:static_eq_data}.  We can ``fix" this by changing to $d \approx 24cm$ in calculations, but that distance doesn't seem to be physically real in the system.  It may be that static friction in the pulleys or knife-edge clamps leads to a dampening term that causes the theory to overpredict $h/d$. 
+Residuals showing detail of the $\approx 5\%$ disagreement between data and theory in equation \ref{eq:equilib} and figure \ref{fig:static_eq_data}.  We can ``fix" this by changing to $d \approx 24cm$ in calculations, but that distance doesn't accurately correspond the setup in figure \ref{fig:overview}.  It may be that static friction in the pulleys or knife-edge clamps leads to a dampening term that causes the theory to overpredict $h/d$. 
 }
 \label{fig:static_eq_residuals_data}
 \end{figure} 
@@ -286,7 +286,7 @@ t&=& \frac{-B}{2A}. \label{eq:peak}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Edit could actualy start here...
 
-Physically speaking, equilibrium, $h_{eq}$, is poorly defined in the region $\frac{M}{2m_c}>0.8$ and it is correspondingly difficult to get the system to oscillate in a stable, repeatable way in this region.  This is seen in  figures \ref{fig:oscillation} and \ref{fig:oscillation_residuals}.  In both figures the oscillation period predicted by equation \ref{eq:period} is higher than the period we measured. Restated, in experiment, oscillations take less time (and are faster) than what our theory predicts.  This deviation is seen primarily at $\frac{M}{2m_c}>0.8$ values, and is about $5-10\%$ in size.  
+Physically speaking, equilibrium, $h_{eq}$, is poorly defined in the region $\frac{M}{2m_c}>0.8$ and it is correspondingly difficult to get the system to oscillate in a stable, repeatable way in this region.  This is seen in  figures \ref{fig:oscillation} and \ref{fig:oscillation_residuals}.  In both figures the oscillation period predicted by equation \ref{eq:period} is higher than the period we measured. \textit{i.e.} Experimentally, the oscillations take less time (and are faster) than what our theory predicts.  This deviation is seen primarily at $\frac{M}{2m_c}>0.8$ values, and is about $5-10\%$ in size.  
 
 We do not fully understand the disagreement between data and theory for $\frac{M}{2m_c}>0.8$. We are tempted to state that  higher frictional damping (neglected in our theory) at $\frac{M}{2m_c}>0.8$ could be a cause for the disagreement  in this region, but we have not yet tested this idea.  
 
@@ -317,8 +317,12 @@ x = A~\exp\left[-\beta t\right] ~\sin\left[ \omega_1 t+\delta \right]
 This damped oscillatory behavior is clearly seen in figure \ref{fig:loggerpro_screenshot}.  A careful reader may note that figure \ref{fig:oscillation} contains measurements of shifted frequency, $\omega_1$ (and related period), while the prediction line is characteristic frequency, $\omega_0$, equation \ref{eq:omega}.  When the damping parameter, $\beta$, is  small, this discrepancy probably doesn't matter because as equation \ref{eg:damped_osc} shows, $\omega_1 \cong \omega_0$ in the limit $\beta\ll \omega_0$.
 
 So, the theory works up until $\frac{M}{2m_c}>0.8$, which, based on the argument above, might be the place where the condition $\beta \ll \omega_0$ no longer holds true.   We have not had the opportunity to systematically measure $\beta$ for many different bridge configurations to test this idea, but we think it bears further study.  
-
-It may also be the motion in this $\frac{M}{2m_c}>0.8$ region is far enough from equilibrium for the simple harmonic oscillator analysis in this paper to be insufficient to describe the motion, in a way similar to how a pendulum released from an angle $90^{\circ}$ from the vertical will not initially show a sinusoidal, $\omega=\sqrt{g/l}$ oscillation.
+%It may also be the motion in this $\frac{M}{2m_c}>0.8$ region is far enough 
+%from equilibrium for the simple harmonic oscillator analysis in this paper 
+%to be insufficient to describe the motion, in a way similar to how a 
+%pendulum released from an angle $90^{\circ}$ from the vertical will not 
+%initially show a sinusoidal, $\omega=\sqrt{g/l}$ oscillation.
+One hypothesis we have is that motion in the region $\frac{M}{2m_c} > 0.8$ is far enough from equilibrium to create a situation where our analysis is insufficient. The incomplete treatment would be analogous to a pendulum being released at an angle of $90^{\circ}$ from the vertical. During the initial oscilations the pendulum will not exhibit a sinusoidal, $\omega=\sqrt{g/l}$ oscillation.
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -356,7 +360,7 @@ We do not provide a proof for this method in the present work, and we would be e
 
 At least informally in our department, there is a fair amount of discussion about what amount of calculus is sufficient for a class to meet the standard of ``University" and not ``College" Physics (these terms have signifigantly different meaning in the United States).  This approach to describing small oscillations makes use of only differentiation, and thus is accessible at the level of a student taking Differential Calculus and University Physics 1 simultaneously. 
 
-We thank Benjamin Bayman and Jeremy Armstrong for useful discussions, the journal's reviewers, and also the students in the Spring 2013 section of Physics 221 at Winona State University, who worked on this lab with us.
+We thank Benjamin Bayman and Jeremy Armstrong for useful discussions, the journal's reviewers for their comments, and also the students in the Spring 2013 section of Physics 221 at Winona State University, who worked on this lab with us.
 
 
 
